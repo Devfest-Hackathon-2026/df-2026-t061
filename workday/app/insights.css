@@ -1,0 +1,244 @@
+.voices {
+  min-height: 100vh;
+  background: #f6f5ee;
+  color: #173f35;
+}
+.vi-shell {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px clamp(18px, 5vw, 60px);
+}
+.voices header .vi-shell,
+.voices nav,
+.vi-actions,
+.vi-filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.voices header .vi-shell {
+  justify-content: space-between;
+}
+.vi-brand img {
+  display: block;
+  width: 220px;
+  max-width: 50vw;
+  height: auto;
+}
+.voices h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  letter-spacing: -0.05em;
+  line-height: 1.25;
+}
+.vi-hero {
+  padding: 48px 0;
+  margin-bottom: 30px;
+}
+.vi-hero p {
+  max-width: 560px;
+}
+.vi-actions {
+  margin: 20px 0;
+}
+.vi-link {
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+  color: #184e41;
+}
+.vi-button {
+  display: inline-block;
+  background: #17634d;
+  color: white;
+  padding: 12px 18px;
+  font-weight: 700;
+}
+.vi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 16px;
+  margin: 18px 0;
+}
+.vi-panel,
+.vi-card {
+  background: #fffef8;
+  border: 1px solid #c8d3c7;
+  padding: 22px;
+  margin: 20px 0;
+  display: grid;
+  gap: 15px;
+}
+.vi-card {
+  margin: 0;
+  border-top: 4px solid #328365;
+}
+.vi-card strong {
+  font-size: 14px;
+}
+.voices small,
+.voices dt {
+  color: #52695f;
+  font-size: 13px;
+}
+.vi-kicker {
+  display: block;
+  margin-top: 20px;
+}
+.voices label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+.voices input,
+.voices select,
+.voices textarea {
+  min-width: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #a6bbad;
+  padding: 10px;
+}
+.voices :is(.vi-filters, .vi-pref) select {
+  appearance: none;
+  padding-right: 26px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='m1 1 4 4 4-4' fill='none' stroke='%23173f35' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 7px center;
+}
+@media (forced-colors: active) {
+  .voices :is(.vi-filters, .vi-pref) select {
+    appearance: auto;
+    background-image: none;
+  }
+}
+
+.voices textarea {
+  min-height: 70px;
+}
+.voices summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+.voices dl > div,
+.voices article {
+  padding: 12px 0;
+  border-bottom: 1px solid #d4ded6;
+}
+.voices dd,
+.voices blockquote {
+  white-space: pre-wrap;
+  line-height: 1.65;
+}
+.voices blockquote {
+  border-left: 3px solid #86aa95;
+  background: #f2f6ee;
+  padding: 12px 16px;
+  margin: 10px 0;
+}
+.voices blockquote small {
+  display: block;
+}
+.voices .vi-pref,
+.voices .vi-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.vi-pref select {
+  width: auto;
+  margin-left: auto;
+}
+.vi-check input {
+  width: auto;
+}
+.voices [role="alert"] {
+  color: #9a3a25;
+}
+.voices .vi-panel > button {
+  justify-self: start;
+}
+.vi-result h3 span {
+  font-size: 14px;
+  color: #765327;
+}
+.voices .vi-panel details label {
+  margin: 14px 0;
+}
+.voices small {
+  overflow-wrap: anywhere;
+}
+.vi-research {
+  border-top: 4px solid #328365;
+}
+.vi-exercise {
+  display: grid;
+  gap: 14px;
+}
+.vi-research .vi-actions {
+  margin: 4px 0;
+}
+.vi-research button:disabled {
+  opacity: 0.55;
+}
+.vi-originals {
+  margin: 24px 0;
+}
+
+.voices .vi-company-tabs {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: clamp(4px, 2vw, 24px);
+  margin: 18px 0;
+  border-bottom: 1px solid #bdcabf;
+}
+.vi-company-tabs a {
+  padding: 10px clamp(3px, 1.3vw, 14px);
+  border-bottom: 3px solid transparent;
+  text-align: center;
+  align-content: center;
+  color: #52695f;
+}
+.vi-company-tabs a[aria-current] {
+  border-color: #17634d;
+  color: #173f35;
+  font-weight: 700;
+}
+.vi-comparison {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 16px;
+}
+.vi-comparison > div {
+  padding: 16px;
+  border-top: 3px solid #bdcabf;
+  background: #f6f5ee;
+  overflow-wrap: anywhere;
+}
+.vi-comparison > div:last-child {
+  border-color: #328365;
+  background: #f2f6ee;
+}
+@media (max-width: 620px) {
+  .vi-company-tabs a { flex: 1; font-size: 14px; }
+  .vi-comparison { grid-template-columns: 1fr; }
+}
+
+.vi-home-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 560px;
+  margin-top: 28px;
+}
+.vi-home-actions .vi-button {
+  padding: 16px 18px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.vi-home-actions .vi-button:hover {
+  background: #104d3c;
+}
+@media (max-width: 520px) {
+  .vi-home-actions { grid-template-columns: 1fr; }
+}

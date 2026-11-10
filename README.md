@@ -1,3 +1,31 @@
+# Workday
+
+新入社員の経験を根拠に、学生が入社前の予想を確かめる企業研究アプリ。
+
+## 公開版
+
+https://workday-516713493020.asia-northeast1.run.app
+
+## ソースと起動
+
+最新版（ロゴ差し替えを含む）は workday/ に格納。Node.js 22以上を使用。
+開発元コミットは AngelSound/workday の 739cf6a。
+
+    cd workday
+    npm ci
+    npm run dev -- --port 3210
+
+Cloud Run・Firestore・Vertex AIの構成と生成回数・期限は [アプリのREADME](workday/README.md) を参照。
+ローカルで起動すると企業一覧・原文・希望条件を確認できる。Geminiの新規生成にはサーバー側の認証と実行枠が必要。
+
+## 提出資料
+
+- [アーキテクチャ図](workday/docs/Workday_アーキテクチャ図.png)
+- [著作物利用シート](workday/docs/Workday_著作物利用シート.docx)
+- プロダクト説明ドキュメント・デモ動画・プレゼンスライドはチーム作成の最終版を提出用フォルダーで共有。
+
+## 運営の案内
+
 # DevFest Hackathon 2026 提出用リポジトリ
 
   DevFest Hackathon 2026 のチームの **最終提出用** リポジトリです。提出期限までに、作品のコードと資料をこのリポジトリに置いてください。
