@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.pem
+*credentials*.json
+.DS_Store
+
+.workday-experiment/
+
+.workday-local/

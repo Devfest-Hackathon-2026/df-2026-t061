@@ -1,0 +1,20 @@
+{
+  "name": "workday-office",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^9.4.0",
+    "@tailwindcss/postcss": "4.2.1",
+    "google-auth-library": "^11.3.4",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwindcss": "4.2.1"
+  }
+}
